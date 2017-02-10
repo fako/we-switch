@@ -28,6 +28,14 @@ $we-switch-color: #2fbac5;
     .slides-md {
         height: 240px;
     }
+    .swiper-pagination-bullet {
+        background-color: transparent;
+        border: 1px solid white;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: white;
+    }
 
     article {
 
@@ -41,6 +49,7 @@ $we-switch-color: #2fbac5;
             position: absolute;
             top: -30px;  // TODO: take from var?
             z-index: 10;
+            color: white;
         }
         .like-stats {
             left: 0;
