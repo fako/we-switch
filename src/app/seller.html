@@ -5,19 +5,19 @@
                 <h2>{{ seller.first_name }}</h2>
                 <p>{{ seller.city }}</p>
                 <ion-row>
-                    <ion-col class="verification-badge" width-20>
+                    <ion-col class="verification-badge" [ngClass]="{verified: seller.bank_account_verified}" width-20>
                         <ion-icon name="card"></ion-icon>
                         <ion-icon class="verified-icon" name="checkmark-circle"></ion-icon>
                     </ion-col>
-                    <ion-col class="verification-badge" width-20>
+                    <ion-col class="verification-badge" [ngClass]="{verified: seller.phone_verified}" width-20>
                         <ion-icon name="phone-portrait"></ion-icon>
                         <ion-icon class="verified-icon" name="checkmark-circle"></ion-icon>
                     </ion-col>
-                    <ion-col class="verification-badge" width-20>
+                    <ion-col class="verification-badge" [ngClass]="{verified: seller.email_verified}" width-20>
                         <ion-icon name="at"></ion-icon>
                         <ion-icon class="verified-icon" name="checkmark-circle"></ion-icon>
                     </ion-col>
-                    <ion-col class="verification-badge" width-20>
+                    <ion-col class="verification-badge" [ngClass]="{verified: seller.facebook_verified}" width-20>
                         <ion-icon name="logo-facebook"></ion-icon>
                         <ion-icon class="verified-icon" name="checkmark-circle"></ion-icon>
                     </ion-col>

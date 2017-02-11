@@ -13,7 +13,7 @@ export class AdvertisementService {
                 "city": "Utrecht",
                 "lon": 52.085567,
                 "lat": 5.08164469999997,
-                "bank_account_verified": true,
+                "bank_account_verified": false,
                 "email_verified": true,
                 "phone_verified": true,
                 "facebook_verified": true,
