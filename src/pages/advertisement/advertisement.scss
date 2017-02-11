@@ -1,0 +1,96 @@
+#advertisement-page {
+
+    text-align: center;
+
+    .slides-md {
+        height: 240px;
+    }
+    .swiper-pagination-bullet {
+        background-color: transparent;
+        border: 1px solid white;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: white;
+    }
+
+    article {
+
+        position: relative;
+
+        h1 {
+            font-weight: 100;
+        }
+
+        .stats {
+            position: absolute;
+            top: -30px;  // TODO: take from var?
+            z-index: 10;
+            color: white;
+        }
+        .like-stats {
+            left: 0;
+        }
+        .view-stats {
+            right: 0;
+        }
+
+    }
+
+    .seller-information {
+        background-color: #f5f5f5;
+        text-align: left;
+
+        .verification-badge {
+            position: relative;
+            max-width: 30px;
+            color: #c3c2c2;
+
+            .verified-icon {
+                display: none;
+                color: $we-switch-color;
+                font-size: 12px;
+
+                position: absolute;
+                left: 40%;
+                top: 50%;
+            }
+        }
+        .verification-badge.verified {
+            color: black;
+            .verified-icon {
+                display: block;
+            }
+        }
+
+        .avatar {
+            background-color: $we-switch-color;
+            border-radius: 50%;
+        }
+    }
+
+    .article-information {
+        color: white;
+        background-color: $we-switch-color;
+
+        p {
+            margin: 0;
+            padding: 10px;
+        }
+
+        .attribute-icon {
+            border: 1px solid white;
+            max-width: 44px;
+        }
+        .attribute-text {
+            text-align: left;
+            span {
+                display: block;
+            }
+            & :first-child {
+                font-weight: 500;
+            }
+        }
+    }
+
+}
