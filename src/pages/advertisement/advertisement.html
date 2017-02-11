@@ -25,37 +25,7 @@
         </ion-grid>
     </article>
 
-    <div class="seller-information">
-        <ion-grid>
-            <ion-row>
-                <ion-col width-67>
-                    <h2>Wilhelmina</h2>
-                    <p>Utrecht</p>
-                    <ion-row>
-                        <ion-col class="verification-badge" width-20>
-                            <ion-icon name="card"></ion-icon>
-                            <ion-icon class="verified-icon" name="checkmark-circle"></ion-icon>
-                        </ion-col>
-                        <ion-col class="verification-badge" width-20>
-                            <ion-icon name="phone-portrait"></ion-icon>
-                            <ion-icon class="verified-icon" name="checkmark-circle"></ion-icon>
-                        </ion-col>
-                        <ion-col class="verification-badge" width-20>
-                            <ion-icon name="at"></ion-icon>
-                            <ion-icon class="verified-icon" name="checkmark-circle"></ion-icon>
-                        </ion-col>
-                        <ion-col class="verification-badge" width-20>
-                            <ion-icon name="logo-facebook"></ion-icon>
-                            <ion-icon class="verified-icon" name="checkmark-circle"></ion-icon>
-                        </ion-col>
-                    </ion-row>
-                </ion-col>
-                <ion-col width-33>
-                    <img class="avatar" src="https://s3-eu-central-1.amazonaws.com/sabs-images/UP_20170210_090322.png"/>
-                </ion-col>
-            </ion-row>
-        </ion-grid>
-    </div>
+    <seller-box [seller]="advertisement.seller"></seller-box>
 
     <div class="article-information">
 

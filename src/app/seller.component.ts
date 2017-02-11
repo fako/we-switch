@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'seller',
+    selector: 'seller-box',
     templateUrl: 'seller.html'
 })
-export class Seller {
+export class SellerBox {
+    @Input() seller: any;
     
     constructor() {
 
