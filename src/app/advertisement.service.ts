@@ -28,15 +28,15 @@ export class AdvertisementService {
             "rating": 0,
             "title": "Glastron Mx175 (bj 2007)",
             "description": "Glastron mx175 type: sportboot bouwjaar: 2007 merk motor: volvo penta sx 3.0 aantal cilinders: 4 topsnelheid: 72 km/u afmetingen (lxb): 520 x 220 cm rompmateriaal: polyester ligplaats: veenendaal opties en accessoires  brandblusser hekdrive lenspomp navigatieverlichting  mooie en goed onderhouden glastron…",
-            "price": 14950,
-            "lon": 4.696,
-            "lat": 51.934,
+            "price": 149.50,  // decided to go with float as Angular2 has standard components to work with them
+            "lon": 4.696,  // ignored this but http://leafletjs.com/ seems a good library for it
+            "lat": 51.934,  // ignored this but http://leafletjs.com/ seems a good library for it
             "hsl_colour": {
                 "l": 62,
                 "s": 3,
                 "h": 40
             },
-            "image_key": "https://s3.eu-central-1.amazonaws.com/sabs-backend/media/268851_20160611163336_medium",
+            "image_key": "https://s3.eu-central-1.amazonaws.com/sabs-backend/media/268851_20160611163336_medium",  // ignored this took array below
             "category": "Watersport",
             "group": 2,
             "fb_share": false,
@@ -74,7 +74,7 @@ export class AdvertisementService {
                 "id": 535129,
                 "file_key": "https://s3.eu-central-1.amazonaws.com/sabs-backend/media/268851_20160611163336_medium"
             }, {
-                "id": 535130,
+                "id": 535130,  // this image is screwed
                 "file_key": "https://s3.eu-central-1.amazonaws.com/sabs-backend/media/268851_20160611163337_medium"
             }],
             "comments": []

@@ -1,28 +1,23 @@
 <div id="advertisement-page">
+
     <ion-slides pager>
-
-        <ion-slide>
-            <img src="https://s3.eu-central-1.amazonaws.com/sabs-backend/media/268851_20160611163336_medium"/>
+        <ion-slide *ngFor="let image of advertisement.images">
+            <img [src]="image.file_key" alt="{{ image.id }}"/>
         </ion-slide>
-
-        <ion-slide>
-            <img src="https://s3.eu-central-1.amazonaws.com/sabs-backend/media/268851_20160611163337_medium"/>
-        </ion-slide>
-
     </ion-slides>
 
     <article>
         <ion-grid>
 
             <ion-row class="article-stats">
-                <ion-col width-20 class="stats like-stats"><ion-icon name="ios-heart-outline"></ion-icon> 120</ion-col>
-                <ion-col width-20 class="stats view-stats"><ion-icon name="ios-eye-outline"></ion-icon> 1302</ion-col>
+                <ion-col width-20 class="stats like-stats"><ion-icon name="ios-heart-outline"></ion-icon> {{ advertisement.stat_views }}</ion-col>
+                <ion-col width-20 class="stats view-stats"><ion-icon name="ios-eye-outline"></ion-icon> {{ advertisement.stat_likes }}</ion-col>
             </ion-row>
 
-            <h1>Glastron Mx175 (bj 2007)</h1>
+            <h1>{{ advertisement.title }}</h1>
 
             <ion-row>
-                <ion-col width-25>65</ion-col>
+                <ion-col width-25>{{ advertisement.price | currency:'EUR':true }}</ion-col>
                 <ion-col width-50>kopen</ion-col>
                 <ion-col width-25>chat</ion-col>
             </ion-row>
