@@ -1,11 +1,16 @@
 import { Component } from '@angular/core';
+import { AdvertisementService } from '../../app/advertisement.service';
 
 @Component({
-  templateUrl: 'advertisement.html'
+    templateUrl: 'advertisement.html'
 })
 export class AdvertisementPage {
 
-  constructor() {
+    advertisement: any = null;
 
-  }
+    constructor() {
+
+        this.advertisement = AdvertisementService.getAdvertisement();
+
+    }
 }
