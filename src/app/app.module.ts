@@ -4,12 +4,14 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { WeSwitchApp } from './app.component';
 import { AdvertisementPage } from '../pages/advertisement/advertisement';
 import { SellerBox } from './seller.component';
+import { ProductBox } from './product.component';
 
 @NgModule({
     declarations: [
         WeSwitchApp,
         AdvertisementPage,
-        SellerBox
+        SellerBox,
+        ProductBox
     ],
     imports: [
         IonicModule.forRoot(WeSwitchApp)
@@ -18,7 +20,8 @@ import { SellerBox } from './seller.component';
     entryComponents: [
         WeSwitchApp,
         AdvertisementPage,
-        SellerBox
+        SellerBox,
+        ProductBox
     ],
     providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
