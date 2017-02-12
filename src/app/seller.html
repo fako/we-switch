@@ -1,4 +1,4 @@
-<div class="seller-information">
+<div class="seller-box">
     <ion-grid>
         <ion-row>
             <ion-col width-67>
@@ -23,8 +23,8 @@
                     </ion-col>
                 </ion-row>
             </ion-col>
-            <ion-col width-33>
-                <img class="avatar" [src]="seller.profile_avatar" alt="{{ seller.first_name }}"/>
+            <ion-col class="avatar" width-33>
+                <img [src]="seller.profile_avatar" alt="{{ seller.first_name }}"/>
             </ion-col>
         </ion-row>
     </ion-grid>

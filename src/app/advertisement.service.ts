@@ -28,7 +28,7 @@ export class AdvertisementService {
             "rating": 0,
             "title": "Glastron Mx175 (bj 2007)",
             "description": "Glastron mx175 type: sportboot bouwjaar: 2007 merk motor: volvo penta sx 3.0 aantal cilinders: 4 topsnelheid: 72 km/u afmetingen (lxb): 520 x 220 cm rompmateriaal: polyester ligplaats: veenendaal opties en accessoires  brandblusser hekdrive lenspomp navigatieverlichting  mooie en goed onderhouden glastron…",
-            "price": 149.50,  // decided to go with float as Angular2 has standard components to work with them
+            "price": 25,  // decided to go with float as Angular2 has standard components to work with them and design breaks on large numbers
             "lon": 4.696,  // ignored this but http://leafletjs.com/ seems a good library for it
             "lat": 51.934,  // ignored this but http://leafletjs.com/ seems a good library for it
             "hsl_colour": {

@@ -6,24 +6,30 @@
         </ion-slide>
     </ion-slides>
 
-    <article>
+    <div id="advertisement-details">
         <ion-grid>
 
             <ion-row class="article-stats">
-                <ion-col width-20 class="stats like-stats"><ion-icon name="ios-heart-outline"></ion-icon> {{ advertisement.stat_views }}</ion-col>
-                <ion-col width-20 class="stats view-stats"><ion-icon name="ios-eye-outline"></ion-icon> {{ advertisement.stat_likes }}</ion-col>
+                <ion-col width-20 class="stats like-stats">
+                    <ion-icon name="ios-heart-outline"></ion-icon>
+                    {{ advertisement.stat_views }}
+                </ion-col>
+                <ion-col width-20 class="stats view-stats">
+                    <ion-icon name="ios-eye-outline"></ion-icon>
+                    {{ advertisement.stat_likes }}
+                </ion-col>
             </ion-row>
 
             <h1>{{ advertisement.title }}</h1>
 
-            <ion-row>
-                <ion-col width-25>{{ advertisement.price | currency:'EUR':true }}</ion-col>
-                <ion-col width-50>kopen</ion-col>
-                <ion-col width-25>chat</ion-col>
+            <ion-row class="call-to-action">
+                <ion-col class="price" width-33>&euro;{{ advertisement.price }}</ion-col>
+                <ion-col class="buy" width-33>kopen</ion-col>
+                <ion-col class="chat" width-33><ion-icon name="ios-send-outline"></ion-icon></ion-col>
             </ion-row>
 
         </ion-grid>
-    </article>
+    </div>
 
     <seller-box [seller]="advertisement.seller"></seller-box>
 

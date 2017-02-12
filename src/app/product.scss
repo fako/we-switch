@@ -1,0 +1,24 @@
+.product-box {
+    padding: 20px;
+    color: white;
+    background-color: $we-switch-color;
+
+    p {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .attribute-icon {
+        border: 1px solid white;
+        max-width: 44px;
+    }
+    .attribute-text {
+        text-align: left;
+        span {
+            display: block;
+        }
+        & :first-child {
+            font-weight: 500;
+        }
+    }
+}
