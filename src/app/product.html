@@ -3,45 +3,17 @@
     <p>{{ description }}</p>
 
     <ion-grid>
-        <ion-row>
-            <ion-col width-50>
+        <ion-row *ngFor="let attributeRow of attributes">
+            <ion-col *ngFor="let attribute of attributeRow" width-50>
                 <ion-row>
                     <ion-col class="attribute-icon" width-25></ion-col>
                     <ion-col class="attribute-text" width-75>
-                        <span>Conditie</span>
-                        <span>Zo goed als nieuw</span>
-                    </ion-col>
-                </ion-row>
-            </ion-col>
-            <ion-col width-50>
-                <ion-row>
-                    <ion-col class="attribute-icon" width-25></ion-col>
-                    <ion-col class="attribute-text" width-75>
-                        <span>Maat</span>
-                        <span>Mooi maatje</span>
-                    </ion-col>
-                </ion-row>
-            </ion-col>
-        </ion-row>
-        <ion-row>
-            <ion-col width-50>
-                <ion-row>
-                    <ion-col class="attribute-icon" width-25></ion-col>
-                    <ion-col class="attribute-text" width-75>
-                        <span>Levering</span>
-                        <span>Over de rivieren</span>
-                    </ion-col>
-                </ion-row>
-            </ion-col>
-            <ion-col width-50>
-                <ion-row>
-                    <ion-col class="attribute-icon" width-25></ion-col>
-                    <ion-col class="attribute-text" width-75>
-                        <span>Merk</span>
-                        <span>Bootastic</span>
+                        <span>{{ attribute.name }}</span>
+                        <span>{{ attribute.selected_values }}</span>
                     </ion-col>
                 </ion-row>
             </ion-col>
         </ion-row>
     </ion-grid>
+
 </div>

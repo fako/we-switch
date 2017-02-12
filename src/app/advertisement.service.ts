@@ -78,7 +78,7 @@ export class AdvertisementService {
                 "file_key": "https://s3.eu-central-1.amazonaws.com/sabs-backend/media/268851_20160611163337_medium"
             }],
             "comments": []
-        }
+        };
     }
 
 }
