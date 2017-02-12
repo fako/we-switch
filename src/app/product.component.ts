@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import lodash from "lodash";
 
 @Component({
     selector: 'product-box',
@@ -13,11 +12,23 @@ export class ProductBox {
     @Input()
     set attributes(attributesInput: Array<any>) {
 
+        let self = this;
+
         // Simplifying and chunking the attributes to work easily in the template
-        let simpleAttributes = lodash.forEach(attributesInput, function(attribute){
+        this._attributes = [];
+        attributesInput.forEach(function(attribute, index){
+
             attribute.selected_values = attribute.selected_values.join(', ');
+
+            // Normally I'd use lodash.chunk for chunking an array,
+            // but lodash and typescript don't like to play together on my machine :(
+            if(index % 2) {
+                self._attributes[self._attributes.length - 1].push(attribute);
+            } else {
+                self._attributes.push([attribute]);
+            }
+
         });
-        this._attributes = lodash.chunk(simpleAttributes, 2);
 
     }
     get attributes(): Array<any> { return this._attributes; }
